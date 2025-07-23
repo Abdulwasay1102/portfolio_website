@@ -125,6 +125,15 @@
   padding: 0;
   margin: 0;
 }
+* {
+  box-sizing: border-box;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+body {
+  overflow-x: hidden;
+}
 
 
 html {
@@ -1308,4 +1317,11 @@ body.light-theme {
     object-position: center;
     display: block;
    }
-   
+   /* here I change the mobile dasktop mode reonsiveness */
+   /* Universal wrapper to prevent content overflow on wide screens */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
