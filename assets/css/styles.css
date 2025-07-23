@@ -59,6 +59,65 @@
     --smaller-font-size: 0.813rem;
   }
 }
+/*=============== Disktop mode Mobile responisve ===============*/
+/* === RESPONSIVE FIX FOR DESKTOP MODE ON MOBILE === */
+@media screen and (min-width: 1024px) and (max-width: 1400px) {
+    .services__container,
+    .contact__container,
+    .work__container {
+        max-width: 100%;
+        padding: 0 2rem;
+        box-sizing: border-box;
+    }
+
+    .section__title {
+        font-size: 2rem;
+        word-wrap: break-word;
+        text-align: center;
+    }
+
+    .section__subtitle {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .services__title,
+    .contact__title,
+    .work__title {
+        font-size: 1.2rem;
+        word-wrap: break-word;
+    }
+
+    .services__description,
+    .contact__info,
+    .contact__input,
+    .contact__form,
+    .work__img {
+        max-width: 100%;
+        font-size: 1rem;
+        overflow-wrap: break-word;
+    }
+
+    .contact__form {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .work__img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    input,
+    textarea {
+        font-size: 1rem;
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+
 
 /*=============== BASE ===============*/
 * {
